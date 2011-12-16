@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+  <!-- Copyright 2010 Mark Wyszomierski -->
+    
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:foursquared="http://schemas.android.com/apk/res/com.joelapenna.foursquared"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:background="@drawable/listview_item_manual" > 
+        
+        
+  <!-- This is the top header, contains user's picture etc. -->
+  <LinearLayout 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:background="@color/blue_start"
+    android:paddingLeft="5dip" 
+    android:paddingRight="5dip" 
+    android:paddingTop="10dip" 
+    android:paddingBottom="10dip" 
+    >
+
+    <ImageView
+      android:id="@+id/userDetailsActivityPhoto"
+      android:layout_width="80dip"
+      android:layout_height="80dip"
+      android:padding="3dip"
+      android:background="@drawable/photo_background"
+      android:src="@drawable/blank_boy"
+      android:scaleType="fitCenter"  
+      android:gravity="center_vertical" />
+      
+    <LinearLayout 
+      android:layout_width="fill_parent" 
+      android:layout_height="wrap_content"
+      android:paddingLeft="10dip"
+      android:orientation="vertical" 
+      >
+        
+      <TextView 
+        android:id="@+id/userDetailsActivityUsername" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:textAppearance="@style/TextViewStyleUserDetailsActivityTitle" />
+        
+      <TextView 
+        android:id="@+id/userDetailsActivityHometownOrLastSeen" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:text="Last Seen"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:textAppearance="@style/TextViewStyleUserDetailsActivityLastSeen" />
+        
+      <Button
+        android:id="@+id/userDetailsActivityFriendButton" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD AS FRIEND"
+        style="@style/friendButton"
+        />
+          
+    </LinearLayout>
+        
+  </LinearLayout>
+  
+  
+  <LinearLayout 
+    android:layout_width="fill_parent" 
+    android:layout_height="8dip"
+    android:background="@color/color_bright_green" />
+
+      
+  <LinearLayout
+    android:id="@+id/venueActivityDetailsProgress"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:visibility="gone" >
+    
+    <ProgressBar
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+        
+  </LinearLayout>
+  
+  
+  <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+      
+    <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:orientation="vertical" >
+      
+      
+      <LinearLayout 
+        android:id="@+id/userDetailsActivityGeneral"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="horizontal"
+        android:paddingTop="5dip"
+        android:paddingBottom="6dip"
+        android:background="@drawable/listview_item_manual" >
+          
+	    <RelativeLayout 
+          android:id="@+id/userDetailsActivityGeneralMayorships"
+          android:layout_width="0dip" 
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:focusable="true"
+          android:padding="3dip"
+          android:layout_marginLeft="5dip"
+          android:background="@drawable/user_details_activity_general_selector" >  
+          
+          <TextView 
+	        android:id="@+id/userDetailsActivityGeneralMayorshipsTitle"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:text="@string/user_details_activity_general_mayorships"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentLeft="true"
+            android:paddingLeft="2dip"
+            android:textAppearance="@style/TextViewStyleUserDetailsActivityGeneralTitle"  />
+            
+          <ImageView
+            android:id="@+id/userDetailsActivityGeneralMayorshipsIcon"
+	        android:layout_width="16dip"
+	        android:layout_height="12dip"
+	        android:scaleType="fitXY" 
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginRight="4dip"
+	        android:layout_marginTop="7dip" 
+	        android:src="@drawable/crown_small"
+	        android:layout_below="@id/userDetailsActivityGeneralMayorshipsTitle"
+	        android:layout_alignParentLeft="true"  />
+        
+	      <TextView 
+	        android:id="@+id/userDetailsActivityGeneralMayorshipsValue"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textAppearance="@style/TextViewStyleUserDetailsActivityGeneralValue"
+	        android:layout_below="@id/userDetailsActivityGeneralMayorshipsTitle"
+	        android:layout_toRightOf="@id/userDetailsActivityGeneralMayorshipsIcon"  />
+             
+          <ImageView
+	        android:id="@+id/userDetailsActivityGeneralMayorshipsChevron"
+	        android:layout_width="9dip"
+	        android:layout_height="13dip"
+	        android:src="@drawable/arrow_white"
+	        android:scaleType="fitCenter"  
+	        android:layout_marginLeft="3dip"
+	        android:layout_marginRight="3dip" 
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true" />
+	        
+        </RelativeLayout>
+        
+        <RelativeLayout 
+          android:id="@+id/userDetailsActivityGeneralBadges"
+          android:layout_width="0dip" 
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:focusable="true"
+          android:padding="3dip"
+          android:layout_marginLeft="5dip"
+          android:layout_marginRight="5dip"
+          android:background="@drawable/user_details_activity_general_selector" >  
+          
+          <TextView 
+	        android:id="@+id/userDetailsActivityGeneralBadgesTitle"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:text="@string/user_details_activity_general_badges"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentLeft="true"
+            android:paddingLeft="2dip"
+            android:textAppearance="@style/TextViewStyleUserDetailsActivityGeneralTitle"  />
+            
+          <ImageView
+            android:id="@+id/userDetailsActivityGeneralBadgesIcon"
+	        android:layout_width="17dip"
+	        android:layout_height="20dip"
+	        android:scaleType="fitXY" 
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginRight="4dip"
+	        android:layout_marginTop="3dip" 
+	        android:src="@drawable/badge"
+	        android:layout_below="@id/userDetailsActivityGeneralBadgesTitle"
+	        android:layout_alignParentLeft="true"   />
+        
+	      <TextView 
+	        android:id="@+id/userDetailsActivityGeneralBadgesValue"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textAppearance="@style/TextViewStyleUserDetailsActivityGeneralValue"
+	        android:layout_below="@id/userDetailsActivityGeneralBadgesTitle"
+	        android:layout_toRightOf="@id/userDetailsActivityGeneralBadgesIcon" />
+                
+          <ImageView
+	        android:id="@+id/userDetailsActivityGeneralBadgesChevron"
+	        android:layout_width="9dip"
+	        android:layout_height="13dip"
+	        android:src="@drawable/arrow_white"
+	        android:scaleType="fitCenter"  
+	        android:layout_marginLeft="3dip"
+	        android:layout_marginRight="3dip"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"  />
+	        
+        </RelativeLayout>
+        
+        <RelativeLayout 
+          android:id="@+id/userDetailsActivityGeneralTips"
+          android:layout_width="0dip" 
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:focusable="true"
+          android:padding="3dip"
+          android:layout_marginRight="5dip"
+          android:background="@drawable/user_details_activity_general_selector" >  
+          
+          <TextView 
+	        android:id="@+id/userDetailsActivityGeneralTipsTitle"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:text="@string/user_details_activity_general_tips"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentLeft="true"
+            android:paddingLeft="2dip"
+            android:textAppearance="@style/TextViewStyleUserDetailsActivityGeneralTitle"  />
+            
+          <ImageView
+            android:id="@+id/userDetailsActivityGeneralTipsIcon"
+	        android:layout_width="13dip"
+	        android:layout_height="19dip"
+	        android:scaleType="fitXY" 
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginRight="4dip"
+	        android:layout_marginTop="3dip" 
+	        android:src="@drawable/tip"
+	        android:layout_below="@id/userDetailsActivityGeneralTipsTitle"
+	        android:layout_alignParentLeft="true"  />
+        
+	      <TextView 
+	        android:id="@+id/userDetailsActivityGeneralTipsValue"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textAppearance="@style/TextViewStyleUserDetailsActivityGeneralValue"
+	        android:layout_below="@id/userDetailsActivityGeneralTipsTitle"
+	        android:layout_toRightOf="@id/userDetailsActivityGeneralTipsIcon" />
+              
+          <ImageView
+	        android:id="@+id/userDetailsActivityGeneralTipsChevron"
+	        android:layout_width="9dip"
+	        android:layout_height="13dip"
+	        android:src="@drawable/arrow_white"
+	        android:scaleType="fitCenter"  
+	        android:layout_marginLeft="3dip"
+	        android:layout_marginRight="3dip"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"  />
+	        
+        </RelativeLayout>
+	    
+      </LinearLayout>
+      
+      
+      <RelativeLayout 
+        android:id="@+id/userDetailsActivityCheckins"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:padding="7dip"
+        android:visibility="gone"
+        android:background="@drawable/listview_item_manual" >
+      
+        <TextView 
+          android:id="@+id/userDetailsActivityCheckinsText"
+          android:layout_width="wrap_content" 
+          android:layout_height="wrap_content"
+          android:text="478 Check-ins"
+          android:paddingTop="7dip"
+          android:paddingBottom="7dip"
+          android:textAppearance="@style/TextViewStyleVenueActivityBold"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true" />
+
+        <ImageView
+          android:id="@+id/userDetailsActivityCheckinsChevron"
+          android:layout_width="9dip"
+          android:layout_height="13dip"
+          android:src="@drawable/arrow_grey"
+          android:scaleType="fitCenter"  
+          android:layout_marginLeft="3dip"
+          android:layout_marginRight="3dip"
+          android:layout_centerVertical="true"
+          android:layout_alignParentRight="true" />
+
+      </RelativeLayout>
+      
+      
+      <RelativeLayout 
+        android:id="@+id/userDetailsActivityFriendsFollowers"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:padding="7dip"
+        android:visibility="gone"
+        android:background="@drawable/listview_item_manual" >
+      
+        <TextView 
+          android:id="@+id/userDetailsActivityFriendsFollowersText"
+          android:layout_width="wrap_content" 
+          android:layout_height="wrap_content"
+          android:text="18 Followers, 40 Friends"
+          android:paddingTop="7dip"
+          android:paddingBottom="7dip"
+          android:textAppearance="@style/TextViewStyleVenueActivityBold"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true" />
+
+        <ImageView
+          android:id="@+id/userDetailsActivityFriendsFollowersChevron"
+          android:layout_width="9dip"
+          android:layout_height="13dip"
+          android:src="@drawable/arrow_grey"
+          android:scaleType="fitCenter"  
+          android:layout_marginLeft="3dip"
+          android:layout_marginRight="3dip"
+          android:layout_centerVertical="true"
+          android:layout_alignParentRight="true" />
+
+      </RelativeLayout>
+        
+      
+      <RelativeLayout 
+        android:id="@+id/userDetailsActivityAddFriends"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:padding="7dip"
+        android:visibility="gone"
+        android:background="@drawable/listview_item_manual" >
+      
+        <TextView 
+          android:id="@+id/userDetailsActivityAddFriendsText"
+          android:layout_width="wrap_content" 
+          android:layout_height="wrap_content"
+          android:text="@string/user_details_activity_add_friends"
+          android:textAppearance="@style/TextViewStyleVenueActivityBold"
+          android:paddingTop="7dip"
+          android:paddingBottom="7dip"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true" />
+
+        <ImageView
+          android:id="@+id/userDetailsActivityAddFriendsChevron"
+          android:layout_width="9dip"
+          android:layout_height="13dip"
+          android:src="@drawable/arrow_grey"
+          android:scaleType="fitCenter"  
+          android:layout_marginLeft="3dip"
+          android:layout_marginRight="3dip"
+          android:layout_centerVertical="true"
+          android:layout_alignParentRight="true" />
+
+      </RelativeLayout>
+      
+      
+      
+      <RelativeLayout 
+        android:id="@+id/userDetailsActivityTodos"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:padding="7dip"
+        android:visibility="gone"
+        android:background="@drawable/listview_item_manual" >
+      
+        <TextView 
+          android:id="@+id/userDetailsActivityTodosText"
+          android:layout_width="wrap_content" 
+          android:layout_height="wrap_content"
+          android:text="0 items on To-Do List"
+          android:paddingTop="7dip"
+          android:paddingBottom="7dip"
+          android:textAppearance="@style/TextViewStyleVenueActivityBold"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true" />
+
+        <ImageView
+          android:id="@+id/userDetailsActivityTodosChevron"
+          android:layout_width="9dip"
+          android:layout_height="13dip"
+          android:src="@drawable/arrow_grey"
+          android:scaleType="fitCenter"  
+          android:layout_marginLeft="3dip"
+          android:layout_marginRight="3dip"
+          android:layout_centerVertical="true"
+          android:layout_alignParentRight="true" />
+
+      </RelativeLayout>
+      
+      
+      <RelativeLayout 
+	    android:id="@+id/userDetailsActivityFriends"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:padding="7dip"
+        android:visibility="gone"
+        android:background="@drawable/listview_item_manual" >
+  
+        <TextView 
+          android:id="@+id/userDetailsActivityFriendsText"
+          android:layout_width="wrap_content" 
+          android:layout_height="wrap_content"
+          android:text="N Friends (N friends in common)"
+          android:textAppearance="@style/TextViewStyleVenueActivityBold"
+          android:layout_alignParentTop="true"
+          android:layout_marginBottom="3dip" />
+    
+        <com.joelapenna.foursquared.widget.PhotoStrip
+          android:id="@+id/userDetailsActivityFriendsPhotos"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/userDetailsActivityFriendsText"
+          android:layout_alignParentLeft="true"
+          android:paddingBottom="3dip"
+          foursquared:photoSize="44dip"
+          foursquared:photoSpacing="10dip"
+          foursquared:photoBorder="2dip"
+          foursquared:photoBorderStroke="1dip"
+          foursquared:photoBorderColor="#FFFFFFFF"
+          foursquared:photoBorderStrokeColor="#FFD0D0D0" /> 
+    
+        <ImageView
+          android:id="@+id/userDetailsActivityFriendsChevron"
+          android:layout_width="9dip"
+          android:layout_height="13dip"
+          android:src="@drawable/arrow_grey"
+          android:scaleType="fitCenter"  
+          android:layout_marginLeft="3dip"
+          android:layout_marginRight="3dip"
+          android:layout_centerVertical="true"
+          android:layout_alignParentRight="true"  />
+    
+      </RelativeLayout>
+        
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

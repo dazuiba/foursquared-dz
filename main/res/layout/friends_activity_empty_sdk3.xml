@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright 2010 Mark Wyszomierski -->
+
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/listview_item_manual"  >
+
+  <LinearLayout
+    android:id="@+id/friendsActivityEmptyInner"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:padding="5dip"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" > 
+   
+    <ImageView
+      android:id="@+id/friendsActivityEmptyImageView"
+  	  android:layout_width="170dip"
+	  android:layout_height="155dip"
+      android:src="@drawable/sadface"
+      android:scaleType="fitXY"
+      android:layout_marginTop="20dip" />
+    
+    <TextView
+      android:id="@+id/friendsActivityEmptyTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/black_end"
+      android:textAppearance="@android:style/TextAppearance.Medium" 
+      android:singleLine="true"
+      android:paddingTop="20dip"
+      android:paddingBottom="20dip"
+      android:text="@string/no_friend_checkins"/>
+  
+  </LinearLayout>
+  
+</ScrollView>

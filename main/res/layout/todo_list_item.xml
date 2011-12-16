@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <!-- Copyright 2010 Mark Wyszomierski -->
+
+<RelativeLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:paddingTop="0dip"
+  android:paddingLeft="7dip"
+  android:paddingRight="0dip"
+  android:paddingBottom="5dip"
+  style="@style/listItemStyle"
+  >
+  
+  <ImageView
+    android:id="@+id/ivVenueCategory"
+    android:layout_width="32dip"
+    android:layout_height="32dip"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:src="@drawable/category_none"
+    android:scaleType="fitCenter"  
+    android:layout_marginTop="5dip"
+    android:layout_marginRight="8dip" />
+  
+  <TextView
+    android:id="@+id/tvTitle"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="2dip"
+    android:layout_marginRight="24dip"
+    android:text="Title"
+    android:maxLines="1"
+    android:singleLine="true"
+    android:textAppearance="@style/TextViewStyleTipListItemTitle"
+    android:layout_toRightOf="@id/ivVenueCategory" />
+        
+  <TextView
+    android:id="@+id/tvBody"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="24dip"
+    android:text="Body"
+    android:textAppearance="@style/TextViewStyleTipListItemBody"
+    android:layout_toRightOf="@id/ivVenueCategory"
+    android:layout_below="@id/tvTitle" />
+
+  <TextView
+    android:id="@+id/tvDateAndAuthor"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="12dip"
+    android:text="Date and Author"
+    android:paddingTop="1dip"
+    android:paddingBottom="1dip"
+    android:textAppearance="@style/TextViewStyleTipListItemDateAuthor"
+    android:layout_toRightOf="@id/ivVenueCategory"
+    android:layout_below="@id/tvBody" />
+  
+  <ImageView
+    android:id="@+id/ivTipCorner"
+    android:src="@drawable/tip_list_item_corner_todo"
+    android:layout_width="22dip"
+    android:layout_height="22dip"
+    android:scaleType="fitXY"
+    android:padding="0dip"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    />
+    
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright 2010 Mark Wyszomierski -->
+ 
+<LinearLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical" 
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:paddingBottom="8dip"
+  android:background="@drawable/listview_item_manual"
+  >
+  
+  <TextView
+    android:id="@+id/addFriendInstructionsTextView"
+    style="@style/listSeparatorTextViewStyle" />
+
+  <LinearLayout
+    android:orientation="vertical" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:paddingTop="8dip"
+    android:paddingBottom="20dip" >
+  
+    <TextView
+      android:id="@+id/addFriendInstructionsAdditionalTextView"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content" />
+  
+    <EditText
+      android:id="@+id/addFriendInputEditText"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:inputType="textCapWords"
+      android:imeOptions="actionSearch"
+      android:hint="@string/add_friends_by_name_or_phone_hint" />
+     
+    <Button
+      android:id="@+id/addFriendSearchButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:layout_gravity="right" 
+      android:text="   Search   " />
+      
+  </LinearLayout>
+
+  <LinearLayout
+    android:orientation="vertical" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+   
+    <ListView
+      android:id="@+id/addFriendResultsListView"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:drawSelectorOnTop="false"
+      android:scrollbars="vertical" 
+      />
+    
+  </LinearLayout>
+  
+</LinearLayout>

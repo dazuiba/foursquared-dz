@@ -1,0 +1,347 @@
+<?xml version="1.0" ?>
+<venue>
+  <id>40450</id>
+  <name>On the Corner</name>
+  <address>359 Divisadero St</address>
+  <crossstreet>at Oak</crossstreet>
+  <city>San Francisco</city>
+  <state>CA</state>
+  <zip>94117</zip>
+  <phone/>
+  <twitter>stupdtwittername</twitter>
+  <geolat>37.7729</geolat>
+  <geolong>-122.437</geolong>
+  <tags>
+    <tag>lunch</tag>
+    <tag>pub</tag>
+  </tags>
+  <checkins>
+    <checkin>
+      <id>337912</id>
+      <created>Mon, 08 Jun 09 01:53:09 +0000</created>
+      <shout>Really long shout. Really long shout. Really long shout. Really long shout. Really long shout. Really long shout. Really long shout. Really long shout. Really long shout. Done. </shout>
+      <user>
+        <id>9923</id>
+        <firstname>Test2</firstname>
+        <lastname>User2</lastname>
+        <photo>http://playfoursquare.s3.amazonaws.com/userpix_thumbs/blank_girl.png</photo>
+      </user>
+    </checkin>
+    <checkin>
+      <id>337845</id>
+      <user>
+        <id>9711</id>
+        <firstname>testuser</firstname>
+        <lastname>lapenna</lastname>
+        <photo>http://playfoursquare.s3.amazonaws.com/userpix/9711_1245032443.jpg</photo>
+      </user>
+      <created>Mon, 07 Aug 09 01:34:54 +0000</created>
+    </checkin>
+    <checkin>
+      <id>337846</id>
+      <user>
+        <id>1818</id>
+        <firstname>Joe</firstname>
+        <lastname>LaPenna</lastname>
+        <photo>http://playfoursquare.s3.amazonaws.com/userpix_thumbs/4a76cfe720e34.jpg</photo>
+      </user>
+      <created>Mon, 17 Aug 09 01:34:54 +0000</created>
+    </checkin>
+  </checkins>
+  <stats>
+    <checkins>77</checkins>
+    <beenhere/>
+    <mayor>
+      <user>
+        <id>1818</id>
+        <firstname>Joe</firstname>
+        <lastname>LaPenna</lastname>
+        <photo>http://playfoursquare.s3.amazonaws.com/userpix_thumbs/4a76cfe720e34.jpg</photo>
+      </user>
+      <count>9</count>
+    </mayor>
+  </stats>
+  <tips>
+    <tip>
+      <id>8774</id>
+      <text>The burgers here are surprisingly delicious! Order one and wait out
+        the ten minutes by having a pleasant conversation with Margaret.
+      </text>
+      <distance>0</distance>
+      <created>Thu, 30 Apr 09 23:41:27 +0000</created>
+      <user>
+        <id>1818</id>
+        <firstname>Joe</firstname>
+        <lastname>LaPenna</lastname>
+        <photo>http://playfoursquare.s3.amazonaws.com/userpix_thumbs/4a76cfe720e34.jpg</photo>
+      </user>
+      <venue>
+        <id>36235</id>
+        <name>KK Cafe</name>
+        <address>252 Divisadero st</address>
+        <crossstreet>Haight</crossstreet>
+      </venue>
+    </tip>
+    <tip>
+      <id>8774</id>
+      <text>The burgers here are surprisingly delicious! Order one and wait out
+        the ten minutes by having a pleasant conversation with Margaret.
+      </text>
+      <distance>0</distance>
+      <created>Thu, 30 Apr 09 23:41:27 +0000</created>
+      <user>
+        <id>1818</id>
+        <firstname>Joe</firstname>
+        <lastname>LaPenna</lastname>
+        <photo>http://playfoursquare.s3.amazonaws.com/userpix_thumbs/4a76cfe720e34.jpg</photo>
+      </user>
+      <venue>
+        <id>36235</id>
+        <name>KK Cafe</name>
+        <address>252 Divisadero st</address>
+        <crossstreet>Haight</crossstreet>
+      </venue>
+    </tip>
+    <tip>
+      <id>8774</id>
+      <text>The burgers here are surprisingly delicious! Order one and wait out
+        the ten minutes by having a pleasant conversation with Margaret.
+      </text>
+      <distance>0</distance>
+      <created>Thu, 30 Apr 09 23:41:27 +0000</created>
+      <user>
+        <id>1818</id>
+        <firstname>Joe</firstname>
+        <lastname>LaPenna</lastname>
+        <photo>http://playfoursquare.s3.amazonaws.com/userpix_thumbs/4a76cfe720e34.jpg</photo>
+      </user>
+      <venue>
+        <id>36235</id>
+        <name>KK Cafe</name>
+        <address>252 Divisadero st</address>
+        <crossstreet>Haight</crossstreet>
+      </venue>
+    </tip>
+    <tip>
+      <id>8774</id>
+      <text>The burgers here are surprisingly delicious! Order one and wait out
+        the ten minutes by having a pleasant conversation with Margaret.
+      </text>
+      <distance>0</distance>
+      <created>Thu, 30 Apr 09 23:41:27 +0000</created>
+      <user>
+        <id>1818</id>
+        <firstname>Joe</firstname>
+        <lastname>LaPenna</lastname>
+        <photo>http://playfoursquare.s3.amazonaws.com/userpix_thumbs/4a76cfe720e34.jpg</photo>
+      </user>
+      <venue>
+        <id>36235</id>
+        <name>KK Cafe</name>
+        <address>252 Divisadero st</address>
+        <crossstreet>Haight</crossstreet>
+      </venue>
+    </tip>
+    <tip>
+      <id>8774</id>
+      <text>The burgers here are surprisingly delicious! Order one and wait out
+        the ten minutes by having a pleasant conversation with Margaret.
+      </text>
+      <distance>0</distance>
+      <created>Thu, 30 Apr 09 23:41:27 +0000</created>
+      <user>
+        <id>1818</id>
+        <firstname>Joe</firstname>
+        <lastname>LaPenna</lastname>
+        <photo>http://playfoursquare.s3.amazonaws.com/userpix_thumbs/4a76cfe720e34.jpg</photo>
+      </user>
+      <venue>
+        <id>36235</id>
+        <name>KK Cafe</name>
+        <address>252 Divisadero st</address>
+        <crossstreet>Haight</crossstreet>
+      </venue>
+    </tip>
+    <tip>
+      <id>8774</id>
+      <text>The burgers here are surprisingly delicious! Order one and wait out
+        the ten minutes by having a pleasant conversation with Margaret.
+      </text>
+      <distance>0</distance>
+      <created>Thu, 30 Apr 09 23:41:27 +0000</created>
+      <user>
+        <id>1818</id>
+        <firstname>Joe</firstname>
+        <lastname>LaPenna</lastname>
+        <photo>http://playfoursquare.s3.amazonaws.com/userpix_thumbs/4a76cfe720e34.jpg</photo>
+      </user>
+      <venue>
+        <id>36235</id>
+        <name>KK Cafe</name>
+        <address>252 Divisadero st</address>
+        <crossstreet>Haight</crossstreet>
+      </venue>
+    </tip>
+    <tip>
+      <id>8774</id>
+      <text>The burgers here are surprisingly delicious! Order one and wait out
+        the ten minutes by having a pleasant conversation with Margaret.
+      </text>
+      <distance>0</distance>
+      <created>Thu, 30 Apr 09 23:41:27 +0000</created>
+      <user>
+        <id>1818</id>
+        <firstname>Joe</firstname>
+        <lastname>LaPenna</lastname>
+        <photo>http://playfoursquare.s3.amazonaws.com/userpix_thumbs/4a76cfe720e34.jpg</photo>
+      </user>
+      <venue>
+        <id>36235</id>
+        <name>KK Cafe</name>
+        <address>252 Divisadero st</address>
+        <crossstreet>Haight</crossstreet>
+      </venue>
+    </tip>
+    <tip>
+      <id>8774</id>
+      <text>The burgers here are surprisingly delicious! Order one and wait out
+        the ten minutes by having a pleasant conversation with Margaret.
+      </text>
+      <distance>0</distance>
+      <created>Thu, 30 Apr 09 23:41:27 +0000</created>
+      <user>
+        <id>1818</id>
+        <firstname>Joe</firstname>
+        <lastname>LaPenna</lastname>
+        <photo>http://playfoursquare.s3.amazonaws.com/userpix_thumbs/4a76cfe720e34.jpg</photo>
+      </user>
+      <venue>
+        <id>36235</id>
+        <name>KK Cafe</name>
+        <address>252 Divisadero st</address>
+        <crossstreet>Haight</crossstreet>
+      </venue>
+    </tip>
+    <tip>
+      <id>8774</id>
+      <text>The burgers here are surprisingly delicious! Order one and wait out
+        the ten minutes by having a pleasant conversation with Margaret.
+      </text>
+      <distance>0</distance>
+      <created>Thu, 30 Apr 09 23:41:27 +0000</created>
+      <user>
+        <id>1818</id>
+        <firstname>Joe</firstname>
+        <lastname>LaPenna</lastname>
+        <photo>http://playfoursquare.s3.amazonaws.com/userpix_thumbs/4a76cfe720e34.jpg</photo>
+      </user>
+      <venue>
+        <id>36235</id>
+        <name>KK Cafe</name>
+        <address>252 Divisadero st</address>
+        <crossstreet>Haight</crossstreet>
+      </venue>
+    </tip>
+    <tip>
+      <id>8774</id>
+      <text>The burgers here are surprisingly delicious! Order one and wait out
+        the ten minutes by having a pleasant conversation with Margaret.
+      </text>
+      <distance>0</distance>
+      <created>Thu, 30 Apr 09 23:41:27 +0000</created>
+      <user>
+        <id>1818</id>
+        <firstname>Joe</firstname>
+        <lastname>LaPenna</lastname>
+        <photo>http://playfoursquare.s3.amazonaws.com/userpix_thumbs/4a76cfe720e34.jpg</photo>
+      </user>
+      <venue>
+        <id>36235</id>
+        <name>KK Cafe</name>
+        <address>252 Divisadero st</address>
+        <crossstreet>Haight</crossstreet>
+      </venue>
+    </tip>
+    <tip>
+      <id>8774</id>
+      <text>The burgers here are surprisingly delicious! Order one and wait out
+        the ten minutes by having a pleasant conversation with Margaret.
+      </text>
+      <distance>0</distance>
+      <created>Thu, 30 Apr 09 23:41:27 +0000</created>
+      <user>
+        <id>1818</id>
+        <firstname>Joe</firstname>
+        <lastname>LaPenna</lastname>
+        <photo>http://playfoursquare.s3.amazonaws.com/userpix_thumbs/4a76cfe720e34.jpg</photo>
+      </user>
+      <venue>
+        <id>36235</id>
+        <name>KK Cafe</name>
+        <address>252 Divisadero st</address>
+        <crossstreet>Haight</crossstreet>
+      </venue>
+    </tip>
+    <tip>
+      <id>8774</id>
+      <text>The burgers here are surprisingly delicious! Order one and wait out
+        the ten minutes by having a pleasant conversation with Margaret.
+      </text>
+      <distance>0</distance>
+      <created>Thu, 30 Apr 09 23:41:27 +0000</created>
+      <user>
+        <id>1818</id>
+        <firstname>Joe</firstname>
+        <lastname>LaPenna</lastname>
+        <photo>http://playfoursquare.s3.amazonaws.com/userpix_thumbs/4a76cfe720e34.jpg</photo>
+      </user>
+      <venue>
+        <id>36235</id>
+        <name>KK Cafe</name>
+        <address>252 Divisadero st</address>
+        <crossstreet>Haight</crossstreet>
+      </venue>
+    </tip>
+    <tip>
+      <id>8774</id>
+      <text>The burgers here are surprisingly delicious! Order one and wait out
+        the ten minutes by having a pleasant conversation with Margaret.
+      </text>
+      <distance>0</distance>
+      <created>Thu, 30 Apr 09 23:41:27 +0000</created>
+      <user>
+        <id>1818</id>
+        <firstname>Joe</firstname>
+        <lastname>LaPenna</lastname>
+        <photo>http://playfoursquare.s3.amazonaws.com/userpix_thumbs/4a76cfe720e34.jpg</photo>
+      </user>
+      <venue>
+        <id>36235</id>
+        <name>KK Cafe</name>
+        <address>252 Divisadero st</address>
+        <crossstreet>Haight</crossstreet>
+      </venue>
+    </tip>
+    <tip>
+      <id>8774</id>
+      <text>The burgers here are surprisingly delicious! Order one and wait out
+        the ten minutes by having a pleasant conversation with Margaret.
+      </text>
+      <distance>0</distance>
+      <created>Thu, 30 Apr 09 23:41:27 +0000</created>
+      <user>
+        <id>1818</id>
+        <firstname>Joe</firstname>
+        <lastname>LaPenna</lastname>
+        <photo>http://playfoursquare.s3.amazonaws.com/userpix_thumbs/4a76cfe720e34.jpg</photo>
+      </user>
+      <venue>
+        <id>36235</id>
+        <name>KK Cafe</name>
+        <address>252 Divisadero st</address>
+        <crossstreet>Haight</crossstreet>
+      </venue>
+    </tip>
+  </tips>
+</venue>
+

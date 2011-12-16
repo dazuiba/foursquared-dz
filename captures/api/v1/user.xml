@@ -1,0 +1,73 @@
+{
+    "user": {
+        "id": "9711",
+        "firstname": "Testuser",
+        "lastname": "So and so",
+        "photo": "http:\/\/playfoursquare.s3.amazonaws.com\/userpix\/9711_1245032443.jpg",
+        "twitter_name": "jlapenna_testuser",
+        "friendstatus": "pendingyou",
+        "checkin": {
+            "venue": {
+                "id": "23035",
+                "name": "The Page",
+                "address": "298 Divisadero St",
+                "crossstreet": "at Page",
+                "geolat": "37.7722",
+                "geolong": "-122.437"
+            },
+            "shout": "Leave the poor damn monkeys alone, they've got problems enough as it is."
+        },
+        "settings": {
+            "sendtotwitter": {
+                "@attributes": {
+                    "type": "boolean"
+                }
+            },
+            "sendtofacebook": {
+                "@attributes": {
+                    "type": "boolean"
+                }
+            },
+            "feeds_key": "127e89691d51e7ce94c8dea27fddbe3d"
+        },
+        "badges": {
+            "badge": [{
+                "name": "Newbie",
+                "icon": "http:\/\/playfoursquare.com\/images\/badges\/crunked_on.png",
+                "description": "Congrats on your first check-in!"
+            }, {
+                "name": "Newbie",
+                "icon": "http:\/\/playfoursquare.com\/images\/badges\/bender_on.png",
+                "description": "Congrats on your first check-in!"
+            }, {
+                "name": "Newbie",
+                "icon": "http:\/\/playfoursquare.com\/images\/badges\/local_on.png",
+                "description": "Congrats on your first check-in!"
+            }, {
+                "name": "Newbie",
+                "icon": "http:\/\/playfoursquare.com\/images\/badges\/superuser_on.png",
+                "description": "Congrats on your first check-in!"
+            }, {
+                "name": "Newbie",
+                "icon": "http:\/\/playfoursquare.com\/images\/badges\/crunked_on.png",
+                "description": "Congrats on your first check-in!"
+            }, {
+                "name": "Newbie",
+                "icon": "http:\/\/playfoursquare.com\/images\/badges\/crunked_on.png",
+                "description": "Congrats on your first check-in!"
+            }, {
+                "name": "Newbie",
+                "icon": "http:\/\/playfoursquare.com\/images\/badges\/crunked_on.png",
+                "description": "Congrats on your first check-in!"
+            }, {
+                "name": "Newbie",
+                "icon": "http:\/\/playfoursquare.com\/images\/badges\/crunked_on.png",
+                "description": "Congrats on your first check-in!"
+            }, {
+                "name": "Newbie",
+                "icon": "http:\/\/playfoursquare.com\/images\/badges\/crunked_on.png",
+                "description": "Congrats on your first check-in!"
+            }]
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<cities>
+  <city>
+    <id>42</id>
+    <timezone>America/Chicago</timezone>
+    <name>Austin</name>
+  </city>
+  <city>
+    <id>24</id>
+    <timezone>America/New_York</timezone>
+    <name>Boston</name>
+  </city>
+</cities>
+

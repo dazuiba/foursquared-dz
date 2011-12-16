@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <!-- Copyright 2009 Joe LaPenna -->
+
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@android:id/tabhost"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" >
+  
+  <!-- Background color should be the last value in the selected tab gradient. -->
+  <LinearLayout
+    android:id="@+id/tabBackground"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="0dip"
+	android:background="#4d4d4d">
+    
+    <TabWidget
+      android:id="@android:id/tabs"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content" />
+      
+      <!-- A paddingTop of zero will remove the strip below the tabs. -->
+      <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="5dip" />
+        
+  </LinearLayout>
+</TabHost>

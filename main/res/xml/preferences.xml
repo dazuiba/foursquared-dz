@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <!-- Copyright 2008 Joe LaPenna -->
+
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <PreferenceCategory
+    android:title="@string/preferences_category_checkin_defaults"
+    android:textColor="#FF0000">
+    <CheckBoxPreference
+      android:key="immediate_checkin"
+      android:persistent="true"
+      android:title="@string/preferences_immediate_checkin_title"
+      android:summaryOn="@string/preferences_immediate_checkin_summary_on"
+      android:summaryOff="@string/preferences_immediate_checkin_summary_off"
+      android:defaultValue="false" />
+    <CheckBoxPreference
+      android:key="share_checkin"
+      android:persistent="true"
+      android:title="@string/preferences_share_checkin_title"
+      android:summaryOn="@string/preferences_share_summary_on"
+      android:summaryOff="@string/preferences_share_summary_off"
+      android:defaultValue="true" />
+  </PreferenceCategory>
+   
+  <PreferenceCategory
+    android:title="@string/preferences_category_friends">
+    <com.joelapenna.foursquared.preferences.ClickPreference
+      android:key="friend_add"
+      android:title="@string/preferences_friend_add_title"
+      android:summary="@string/preferences_friend_add_summary" />
+
+    <com.joelapenna.foursquared.preferences.ClickPreference
+      android:key="friend_requests"
+      android:title="@string/preferences_friend_requests_title"
+      android:summary="@string/preferences_friend_requests_summary" />
+  </PreferenceCategory>
+  
+  <PreferenceCategory
+    android:title="@string/preferences_category_user_info">
+    <com.joelapenna.foursquared.preferences.ClickPreference
+      android:key="profile_settings"
+      android:title="@string/preferences_profile_settings_label"
+      android:summary="@string/preferences_profile_settings_summary" />
+    <com.joelapenna.foursquared.preferences.ClickPreference
+      android:key="pings_on"
+      android:title="@string/preferences_pings_title"
+      android:summary="@string/preferences_pings_summary" />
+  </PreferenceCategory>
+
+  <PreferenceCategory
+    android:title="@string/preferences_other_settings">
+    <com.joelapenna.foursquared.preferences.ClickPreference
+      android:key="advanced_settings"
+      android:title="@string/preferences_additional_settings"
+      android:summary="@string/preferences_additional_settings_summary" />
+    <ListPreference
+      android:key="startup_tab" 
+      android:persistent="true"
+      android:title="@string/preferences_startup_tab"
+      android:summary="@string/preferences_startup_tab_summary"
+      android:entries="@array/startup_tabs" 
+      android:entryValues="@array/startup_tabs_values"
+      android:defaultValue="Friends" />
+    <CheckBoxPreference 
+      android:key="cache_geolocation_for_searches"
+      android:persistent="true" 
+      android:title="@string/preferences_cache_geo_loc_for_searches_title"
+      android:summaryOn="@string/preferences_cache_geo_loc_for_searches_on"
+      android:summaryOff="@string/preferences_cache_geo_loc_for_searches_off"
+      android:defaultValue="false" />
+    <CheckBoxPreference
+      android:key="native_full_size_image_viewer"
+      android:persistent="true"
+      android:title="@string/preferences_native_full_size_image_viewer_title"
+      android:summaryOn="@string/preferences_native_full_size_image_viewer_summary_on"
+      android:summaryOff="@string/preferences_native_full_size_image_viewer_summary_off"
+      android:defaultValue="true" />
+    <com.joelapenna.foursquared.preferences.ClickPreference
+      android:key="changelog"
+      android:title="@string/preferences_changelog"
+      android:summary="@string/preferences_changelog_summary" />
+    <com.joelapenna.foursquared.preferences.ClickPreference
+      android:key="help"
+      android:title="@string/help_label"
+      android:summary="@string/help_preference_summary" />
+    <com.joelapenna.foursquared.preferences.ClickPreference
+      android:key="send_feedback"
+      android:title="@string/feedback_label"
+      android:summary="@string/send_feedback_preference_summary" />
+    <com.joelapenna.foursquared.preferences.ClickPreference
+      android:key="tos_privacy"
+      android:title="@string/preferences_tos_label"
+      android:summary="@string/preferences_tos_summary" />
+    <com.joelapenna.foursquared.preferences.ClickPreference
+      android:key="logout"
+      android:title="@string/preferences_logout_title"
+      android:summary="@string/preferences_logout_summary" />
+  </PreferenceCategory>
+  
+</PreferenceScreen>

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<city>
+  <id>42</id>
+  <timezone>America/Chicago</timezone>
+  <name>Austin</name>
+  <shortname>Austin</shortname>
+  <geolat></geolat>
+  <geolong></geolong>
+</city>

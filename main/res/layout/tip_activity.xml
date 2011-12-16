@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <!-- Copyright 2010 Mark Wyszomierski -->
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/listview_item_manual" >
+ 
+  <!-- This is the top header, contains user's picture etc. -->
+  <LinearLayout 
+    android:id="@+id/tipActivityHeaderView"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/header_blue"
+    android:paddingLeft="5dip" 
+    android:paddingRight="5dip" 
+    android:paddingTop="10dip" 
+    android:paddingBottom="10dip" 
+    android:orientation="horizontal"
+    >
+    
+    <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="0dip"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:paddingLeft="8dip" >
+       
+      <TextView 
+        android:id="@+id/tipActivityName" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextViewStyleTipActivityTitle"
+        android:text="Venue Name" />
+    
+      <TextView 
+        android:id="@+id/tipActivityAddress"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextViewStyleTipActivityTitleAddress"
+        android:text="Venue Address" />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+      android:layout_width="wrap_content" 
+      android:layout_height="fill_parent"
+      android:gravity="center_vertical"  
+      >
+      
+      <ImageView
+        android:id="@+id/tipActivityVenueChevron"
+        android:layout_width="9dip"
+        android:layout_height="13dip"
+        android:src="@drawable/arrow_white"
+        android:scaleType="fitCenter"  
+        android:gravity="center_vertical" 
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip" />
+        
+    </LinearLayout>
+        
+  </LinearLayout>
+  
+  <LinearLayout 
+    android:layout_width="fill_parent" 
+    android:layout_height="8dip"
+    android:background="@color/color_bright_green"
+    >
+  </LinearLayout>
+  
+  <LinearLayout 
+    android:layout_width="fill_parent" 
+    android:layout_height="0dip"
+    android:layout_weight="1"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip"
+    android:paddingTop="17dip"
+    android:orientation="vertical" 
+    >
+    
+    <!-- When supplying textAppearance, all links from linkify are invisible. -->
+    <TextView 
+      android:id="@+id/tipActivityBody"
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content"
+      android:text="Tip Body"  
+      android:autoLink="all"
+      android:textSize="16dip"
+      />
+      <!-- 
+      android:textAppearance="@style/TextViewStyleTipActivityBody" 
+      <style name="TextViewStyleTipActivityBody">
+        <item name="android:textSize">16dip</item>
+        <item name="android:textColor">#4c4c4c</item>
+      </style>
+      -->
+      
+    <LinearLayout 
+      android:layout_width="fill_parent" 
+      android:layout_height="wrap_content"
+      android:orientation="horizontal" 
+      android:layout_marginTop="25dip"
+      >
+      
+      <TextView 
+        android:id="@+id/tipActivityDate"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="Tip Date"
+        android:textAppearance="@style/TextViewStyleTipActivityDate"
+        />
+        
+      <TextView 
+        android:id="@+id/tipActivityAuthor"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="Tip Author"
+        android:textAppearance="@style/TextViewStyleTipActivityAuthor"
+        />
+      
+    </LinearLayout>
+        
+  </LinearLayout>
+  
+  <LinearLayout 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:padding="8dip"
+    android:orientation="vertical"
+    android:background="@color/tip_detail_actions_background" >
+    
+    <TextView 
+      android:id="@+id/tipActivityCongrats"
+      android:layout_width="fill_parent" 
+      android:layout_height="wrap_content"
+      android:text="@string/tip_activity_btn_tip_4"
+      android:textAppearance="@style/TextViewStyleTipActivityButtons"
+      android:gravity="center_horizontal"
+      android:paddingTop="14dip"
+      android:paddingBottom="14dip"
+      />
+        
+    <Button
+      android:id="@+id/tipActivityyAddTodoList"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="button 1"
+      android:textAppearance="@style/TextViewStyleTipActivityButtons"
+      android:textColor="#444"
+      /> 
+      
+    <Button
+      android:id="@+id/tipActivityIveDoneThis"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="button 2"
+      android:textAppearance="@style/TextViewStyleTipActivityButtons"
+      android:textColor="#444"
+      />
+  
+  </LinearLayout>
+  
+</LinearLayout>

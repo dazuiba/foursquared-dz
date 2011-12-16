@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <!-- Copyright 2009 Joe LaPenna -->
+  
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:paddingBottom="5dip"
+  android:background="#FFF">
+  
+  <ImageView
+    android:id="@+id/icon"
+    android:layout_width="36dip"
+    android:layout_height="36dip"
+    android:layout_margin="5dip"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:src="@drawable/default_off" />
+  
+  <TextView
+    android:id="@+id/name"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dip"
+    android:layout_marginLeft="5dip"
+    android:textColor="@color/black_end"
+    android:textStyle="bold"
+    android:singleLine="true"
+    android:ellipsize="marquee"
+    android:layout_alignParentTop="true"
+    android:layout_toRightOf="@id/icon"
+    android:text="Badge Title" />
+        
+  <TextView
+    android:id="@+id/description"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dip"
+    android:textColor="@color/black_end"
+    android:layout_below="@id/name"
+    android:layout_toRightOf="@id/icon" />
+     
+</RelativeLayout>

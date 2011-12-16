@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="?android:attr/listPreferredItemHeight"
+  style="@style/listItemStyle"
+  android:paddingTop="0dip"
+  android:paddingRight="0dip"
+  android:paddingBottom="6dip">
+ 
+  <!-- 
+    The category icons come down to us from foursquare at 32x32 pixel size.
+    To support high-density screens, we want to scale the icons up to the
+    same relative size for all devices, otherwise on droid/nexusone, these
+    icons will appear really small.
+   -->
+  <ImageView
+    android:id="@+id/icon"
+    android:layout_width="32dip"
+    android:layout_height="32dip"
+    android:layout_alignParentTop="true"
+    android:src="@drawable/category_none"
+    android:scaleType="fitCenter"  
+    android:gravity="center_horizontal"
+    android:layout_marginTop="4dip"
+    android:layout_marginLeft="5dip" />
+
+  <TextView
+    android:id="@+id/venueName"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/icon"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignWithParentIfMissing="true"
+    android:paddingLeft="7dip"
+    android:paddingRight="7dip"
+    android:textAppearance="@style/TextViewStyleVenueNameListItem"
+    />
+
+  <TextView
+    android:id="@+id/venueLocationLine1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/icon"
+    android:layout_alignParentRight="true"
+    android:layout_below="@id/venueName"
+    android:paddingLeft="7dip"
+    android:paddingRight="20dip"
+    android:textAppearance="@style/TextViewStyleVenueAddressListItem"
+    android:singleLine="true"
+    android:maxLines="1"
+    android:ellipsize="marquee" />
+  
+  <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@id/venueLocationLine1"
+    android:layout_toRightOf="@id/icon"
+    android:paddingLeft="7dip"
+    >
+    
+    <ImageView
+      android:id="@+id/iconSpecialHere"
+      android:layout_width="39dip"
+      android:layout_height="12dip"
+      android:src="@drawable/special_icon"
+      android:layout_gravity="center_vertical"
+      android:layout_marginRight="25dip"
+      android:layout_marginTop="1dip"
+      android:scaleType="fitCenter"   />
+  
+    <TextView
+      android:id="@+id/venueDistance"
+      android:layout_width="90dip"
+      android:layout_height="wrap_content"
+      android:textAppearance="@style/TextViewStyleVenueAddressListItem"
+      android:ellipsize="end" />
+    
+    <ImageView
+      android:id="@+id/iconTrending"
+      android:layout_width="9dip"
+      android:layout_height="9dip"
+      android:src="@drawable/people_icon"
+      android:layout_gravity="center_vertical"
+      android:layout_marginTop="1dip"
+      android:scaleType="fitCenter" />
+      
+    <TextView
+      android:id="@+id/venueCheckinCount"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingLeft="3dip"
+      android:textAppearance="@style/TextViewStyleVenueAddressListItem"
+      android:ellipsize="end" />
+      
+  </LinearLayout>
+  
+  <ImageView
+    android:id="@+id/venueTodoCorner"
+    android:src="@drawable/tip_list_item_corner_todo"
+    android:layout_width="22dip"
+    android:layout_height="22dip"
+    android:scaleType="fitXY"
+    android:padding="0dip"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:visibility="invisible"
+    />
+    
+</RelativeLayout>

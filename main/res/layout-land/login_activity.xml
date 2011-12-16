@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- Copyright 2009 Joe LaPenna -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/foursquare_gradient"
+    android:gravity="center_vertical"
+>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/loginPlaque"
+        android:scaleType="centerInside"
+        android:src="@drawable/main_logo" />
+    <LinearLayout
+        android:id="@+id/loginPlaque"
+        android:orientation="vertical"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dip"
+        android:padding="10dip"
+        android:background="@drawable/purple_plate"
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="2dip"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="#FFF"
+            android:text="@string/login_get_started" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="2dip"
+            android:textColor="#FFF"
+            android:text="@string/login_get_started_more" />
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:hint="@string/phone_number_or_email" />
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:hint="@string/password" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:enabled="false"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:text="@string/login_label" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dip"
+            android:src="@drawable/line" />
+        <TextView
+            android:id="@+id/newAccountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingBottom="2dip"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="#FFF"
+            android:text="@string/need_an_account" />
+    </LinearLayout>
+</RelativeLayout>

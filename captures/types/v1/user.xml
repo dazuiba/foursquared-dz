@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<user>
+  <id>9711</id>
+  <firstname>Testuser</firstname>
+  <lastname>Lapenna</lastname>
+  <photo></photo>
+  <gender></gender>
+  <twitter>jlapenna_testuser</twitter>
+  <phone>654245432</phone>
+  <email>testuser2@joelapenna.com</email>
+  <friendstatus>friend|pendingyou|pendingthem</friendstatus>
+  <checkin type="Checkin"></checkin>
+  <settings type="Settings"></settings>
+  <badges type="Group">
+    <badge type="Badge"></badge>
+  </badges>
+  <!-- For /venue -> <venue><people><now><user type=User> -->
+  <created>Thu, 18 Sep 09 01:14:15 +0000</created>
+</user>

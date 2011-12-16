@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<badge>
+  <id>123</id>
+  <name>Newbie</name>
+  <icon>http://playfoursquare.com/someimages/badge_on.png</icon>
+  <description>Congrats on your first check-in!</description>
+</badge>

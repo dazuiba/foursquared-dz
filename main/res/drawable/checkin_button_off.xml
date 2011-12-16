@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <!-- Copyright (c) Mark Wyszomierski, 2010. -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+  <padding android:left="7dip" android:top="1dip" android:right="7dip" android:bottom="1dip" />
+  <corners android:radius="4dip" />
+  
+  <!-- 
+  <solid android:color="#a6da00" />
+   -->
+   
+ <gradient
+    android:startColor="#c0f900"
+    android:endColor="#8bbc00"
+    android:angle="270" 
+    />
+    
+  <stroke android:color="#cee249"
+  android:width="2dip" />
+</shape>  

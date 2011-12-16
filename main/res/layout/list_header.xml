@@ -1,0 +1,12 @@
+
+<TextView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/list_header_title"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:paddingTop="3dip"
+  android:paddingBottom="4dip"
+  android:paddingLeft="9dip"
+  android:background="@drawable/listview_header_background"
+  android:textAppearance="@style/TextViewStyleHeaderDivider"
+  />

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+  <com.google.android.maps.MapView
+    android:id="@+id/mapView"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:apiKey="@string/google_maps_api_key"
+    android:clickable="true" />
+
+  <Button
+    android:id="@+id/mapsButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/venue_map_more" 
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginBottom="4dip"
+    android:layout_marginRight="7dip"
+    android:visibility="gone" />
+
+  <LinearLayout
+    android:id="@+id/zoomView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@id/mapView"
+    android:layout_alignParentLeft="true"
+    android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

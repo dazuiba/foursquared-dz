@@ -1,0 +1,205 @@
+
+<html>
+  <head>
+    <style type="text/css">
+        body {
+          background:#fff;
+          color:#000;
+          font:normal 12px Tahoma, Arial, Helvetica, Serif;
+          margin:0px;
+          padding:0px;
+        }
+        h4 {
+          float:left;
+          height:15px;
+          margin:0px 0 0;
+          padding:20px 0 0 10px;
+          font:bold 15px Arial, Helvetica, Serif;
+        }
+        h4 span {
+          float:left;
+          padding:0 5px;
+          margin-top:-10px;
+        }
+        ul {
+          clear:both;margin:0 0 15px;
+          padding:0 0 0 20px;
+        }
+        ul li {
+          margin:0;padding:0;
+          list-style-type:square;
+          margin-bottom:5px;
+          margin-left:20px;
+          font:13px Arial, Helvetica, Serif;
+        }
+    </style>
+  </head>
+  
+  
+  <body>
+  
+    <h4><span>What's new in v2010-10-05?</span></h4>
+    <ul>
+      <li>Badge description now being shown with badge-unlock in post-checkin dialog.</li>
+      <li>Post-checkin scores were not being displayed. Scores were still being recorded
+          for users on the foursquare servers, just not being shown in the results dialog.</li>
+      <li>Venue shortcut-creation bug fixed.</li>
+      <li>URLs now being linked in tip/to-do details screen.</li>
+    </ul>
+    
+    <h4><span>What's new in v2010-09-30</span></h4>
+    <ul>
+      <li>Redesign for most activity screens.</li>
+      <li>Tips and To-do screens added as top-level tabs.</li>
+      <li>Friend information added to venue pages.</li>
+      <li>Can access friend requests from Me tab.</li>
+      <li>Can now refresh Me tab.</li>
+      <li>Switched from xml to json for API calls.</li>
+    </ul>
+    
+    <h4><span>What's new in v2010-08-31</span></h4>
+    <ul>
+      <li>Option for install to SD card (Android 2.2 and above required).</li>
+      <li>Added profile settings information to Preferences page. This is a convenience to let
+          users see what email address and name they're using with their Foursquare account.</li>
+      <li>SSL support.</li>
+    </ul>
+    
+    <h4><span>What's new in v2010-08-05</span></h4>
+    <ul>
+      <li>Click your user photo in the 'Me' tab to set a new photo for yourself.</li>
+      <li>Added an option in preferences to use a Foursquare image viewer for viewing user photos.
+          Un-check "Image Viewing" to use it instead of your phone's native image viewer (default).</li>
+    </ul>
+    
+    <h4><span>What's new in v2010-07-13</span></h4>
+    <ul>
+      <li>Bug fix for new category icons (from 2010-07-12 version) which could cause a force-close on the
+          Places tab.</li>
+    </ul>
+    
+    <h4><span>What's new in v2010-07-12</span></h4>
+    <ul>
+      <li>Friend requests screen now has an input filter at top, should make it easier to locate specific
+          friend requests by name.</li>
+      <li>Places list items now have a 'special' icon when the venue is offering a special. Also now showing
+          a person icon when the venue is trending.</li>
+      <li>High res category icons being used now.</li>
+      <li>Added last n system logs messages to feedback emails to help diagnose application errors.</li>
+    </ul>
+    
+    <h4><span>What's new in v2010-06-28</span></h4>
+    <ul>
+      <li>Showing recent nearby friend checkins on a map. You can find this on the Friends tab,
+          Menu -> More -> Map.</li>
+      <li>Add Friends screen now has an option to find Facebook friends that are also using Foursquare.
+          NOTE: There's a render bug in Android for the Facebook login page which makes the username
+          and password fields misalign when the virtual keypad is displayed, this should be fixed in
+          Android Froyo.</li>
+    </ul>
+  
+    <h4><span>What's new in v2010-06-16</span></h4>
+    <ul>
+      <li>The venue activity has a new menu option called 'Edit Venue' which gives you the option to propose
+          venue edits. These include marking a venue as closed, duplicate, or mislocated. The last option 
+          allows you to update all venue information such as address, name, etc.</li> 
+      <li>Menu for Friends tab updated to have a 'more' item, which gives the option to sort friend checkins
+          by time or distance.</li>
+      <li>Add friends and find friends items added to 'more' item on Friends tab menu.
+      <li>Refresh menu item moved to first position in Places tab to be consistent with Friends tab.</li>
+      <li>Fixed bug introduced in v2010-06-07 which was formatting the times of checkins incorrectly in 
+          the Friends tab.</li>
+    </ul>
+    
+    <h4><span>What's new in v2010-06-07</span></h4>
+    <ul>
+      <li>Now showing the 'add friend' option on user details screens, if not already friends. Should make it
+          easier to build your network. </li>
+      <li>Checkin pings support. A service will wake every N minutes (user-configurable) to check for
+          new checkins from friends. </li>
+      <li>New item on user details pages named 'pings', allows you to turn pings on/off per user. Only applicable 
+          if you have enabled ping notifications for yourself. </li>
+      <li>Fix a widget bug that would cause "Application Not Responding" errors.</li>
+      <li>Fixed bug for new users on 1.5. The empty friends screen would crash on some android 1.5 devices.</li> 
+    </ul>
+    
+    <h4><span>What's new in v2010-05-11</span></h4>
+    <ul>
+      <li>Friend invites page now has an option to generate a list of contacts not on foursquare for sending
+          email invites to join. This should make it easier to get friends playing along. </li>
+      <li>For new users, the Friends tab will now show a sad face and two buttons 'add friends' & 'friend requests'.
+          This should make it a little easier for new users to start adding friends. </li>
+      <li>Updated default message for venue pages when there are no recent checkins. This was done to make it
+          clear that the venue page is only showing recent checkins, not a total checkin history. </li>
+      <li>Sorting nearby venues by popularity and distance instead of just distance, <a href="http://blog.foursquare.com/post/589698188/weve-just-made-the-places-screen-smarter">read here</a> 
+          for more info.</li>
+      <li>Updated to SDK level 6. </li>
+    </ul>
+    
+    <h4><span>v2010-04-23</span></h4>
+    <ul>
+      <li>Default zoom level for venue map is closer to street level.</li>
+      <li>Added a new option through preferences which allows user to clear their current geo location 
+          before each venue search. This may help users having issues with geolocation.</li>
+      <li>Updated application icon and menu icons for v6 and newer platforms.</li>
+      <li>Showing reverse geolocation footer on Places tab.</li>
+    </ul>
+    
+    <h4><span>v2010-04-09</span></h4>
+    <ul>
+      <li>New check-in button on venue page.</li>
+      <li>Added a native sign up screen from the login page.</li>
+      <li>Added a 'special' button to the venue page if the venue has a special available.</li>
+      <li>Menu added for Me page, makes it easier to get to the Friend Requests page.</li>
+      <li>Made quick-check-in off by default instead of on. Users can change this in preferences page.</li>
+      <li>Fixed timestamp bug which would place some Droid users in the year 1910.</li>
+    </ul>
+    
+    <h4><span>v2010-03-29</span></h4>
+    <ul>
+      <li>Update for timestamp formatting.</li>
+    </ul>
+    
+    <h4><span>v2010-03-28</span></h4>
+    <ul>
+      <li>Updated checkin screen.</li>
+    </ul>
+    
+    <h4><span>v2010-03-26</span></h4>
+    <ul>
+      <li>Added user photos to venue tips list.</li>
+      <li>Clicking a tip from a venue page displays a new list of options (listing your to-do/completed tips will be added in a future version).</li>
+      <li>Clicking on a nearby special shows venue details for that venue on post-checkin screen.</li>
+      <li>Clicking on mayor photo in post-checkin screen shows user details.</li>
+      <li>Updated distance sorting of venue searches.</li>
+    </ul>
+    
+    <h4><span>v2010-03-23</span></h4>
+    <ul>
+      <li>This "What's New" page.</li>
+      <li>View a user's mayorships through the user details page.</li>
+      <li>History times are now formatted.</li>
+      <li>Choose startup tab (Friends or Places) through the preferences page.</li>
+      <li>Friends checkin tab is sorted by distance and checkin times.</li>
+      <li>Added category icons for user history list.</li>
+    </ul>
+    
+    <h4><span>v2010-03-12</span></h4>
+    <ul>
+      <li>New UI design.</li>
+      <li>See user's mayorhip and badge count.</li>
+      <li>See your own foursquare history.</li>
+      <li>See friends of friends.</li>
+      <li>See contact info of friends.</li>
+    </ul>
+    
+    <h4><span>v2010-03-05</span></h4>
+    <ul>
+      <li>Global Search.</li>
+      <li>Add Friends from Preferences page.</li>
+      <li>Handle friend requests from Preferences page.</li>
+      <li>Click on a user's photo in user details page to see full-size image.</li>
+    </ul>
+    
+  </body>
+</html>

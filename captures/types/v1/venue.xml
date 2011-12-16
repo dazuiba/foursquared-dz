@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<venue>
+  <id>40450</id>
+  <name>On the Corner</name>
+  <distance>0.1</distance>
+  <address>359 Divisadero St</address>
+  <crossstreet>at Oak</crossstreet>
+  <city>San Francisco</city>
+  <cityid>San Francisco</cityid>
+  <state>CA</state>
+  <zip>94117</zip>
+  <phone>8675309</phone>
+  <twitter>stupditwittername</twitter>
+  <geolat>37.7729</geolat>
+  <geolong>-122.437</geolong>
+  <checkins type="Group">
+    <checkin type="Checkin"></checkin>
+  </checkins>
+  <stats type="Stats"></stats>
+  <tips type="Group">
+    <tip type="Tip"></tip>
+  </tips>
+  <todos type="Group" child="Tip">
+    <tip type="Tip"></tip>
+  </todos>
+  <tags type="Tags"></tags>
+</venue>

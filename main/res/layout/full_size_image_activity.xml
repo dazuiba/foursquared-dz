@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright 2010 Mark Wyszomierski -->
+
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#000000"
+  >   
+  
+  <ImageView
+    android:id="@+id/imageView"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+    android:src="@drawable/blank_boy"
+    android:gravity="center_vertical"
+    android:scaleType="fitCenter" />
+
+  <LinearLayout
+    android:id="@+id/setPhotoOption"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:visibility="visible"
+	android:gravity="bottom">
+	
+	<Button
+      android:id="@+id/setPhotoOptionBtn"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:text="Choose New Photo" />
+	
+  </LinearLayout>
+    
+</FrameLayout>

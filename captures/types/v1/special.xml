@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<special>
+  <id>2</id>
+  <type>mayor</type>
+  <message>If you're the mayor your first drink is free!</message>
+  <venue type="Venue"></venue>
+</special>
