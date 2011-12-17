@@ -672,7 +672,8 @@ class FoursquareHttpApiV1 {
     }
     
     private String fullUrl(String url) {
-        return mApiBaseUrl + url + DATATYPE;
+//        return mApiBaseUrl + url + DATATYPE;
+        return mApiBaseUrl + url ;
     }
     
     /**

@@ -18,56 +18,16 @@
             "shout": "Leave the poor damn monkeys alone, they've got problems enough as it is."
         },
         "settings": {
-            "sendtotwitter": {
-                "@attributes": {
-                    "type": "boolean"
-                }
-            },
-            "sendtofacebook": {
-                "@attributes": {
-                    "type": "boolean"
-                }
-            },
+            "sendtotwitter": false,
+            "sendtofacebook": false,
             "feeds_key": "127e89691d51e7ce94c8dea27fddbe3d"
         },
-        "badges": {
-            "badge": [{
+        "badges": [
+						{
                 "name": "Newbie",
                 "icon": "http:\/\/playfoursquare.com\/images\/badges\/crunked_on.png",
                 "description": "Congrats on your first check-in!"
-            }, {
-                "name": "Newbie",
-                "icon": "http:\/\/playfoursquare.com\/images\/badges\/bender_on.png",
-                "description": "Congrats on your first check-in!"
-            }, {
-                "name": "Newbie",
-                "icon": "http:\/\/playfoursquare.com\/images\/badges\/local_on.png",
-                "description": "Congrats on your first check-in!"
-            }, {
-                "name": "Newbie",
-                "icon": "http:\/\/playfoursquare.com\/images\/badges\/superuser_on.png",
-                "description": "Congrats on your first check-in!"
-            }, {
-                "name": "Newbie",
-                "icon": "http:\/\/playfoursquare.com\/images\/badges\/crunked_on.png",
-                "description": "Congrats on your first check-in!"
-            }, {
-                "name": "Newbie",
-                "icon": "http:\/\/playfoursquare.com\/images\/badges\/crunked_on.png",
-                "description": "Congrats on your first check-in!"
-            }, {
-                "name": "Newbie",
-                "icon": "http:\/\/playfoursquare.com\/images\/badges\/crunked_on.png",
-                "description": "Congrats on your first check-in!"
-            }, {
-                "name": "Newbie",
-                "icon": "http:\/\/playfoursquare.com\/images\/badges\/crunked_on.png",
-                "description": "Congrats on your first check-in!"
-            }, {
-                "name": "Newbie",
-                "icon": "http:\/\/playfoursquare.com\/images\/badges\/crunked_on.png",
-                "description": "Congrats on your first check-in!"
-            }]
+            }
+					]
         }
-    }
 }

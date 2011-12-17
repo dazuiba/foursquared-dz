@@ -227,7 +227,7 @@ public class Foursquared extends Application {
         // Try logging in and setting up foursquare oauth, then user
         // credentials.
         if (FoursquaredSettings.USE_DEBUG_SERVER) {
-            mFoursquare = new Foursquare(Foursquare.createHttpApi("10.0.2.2:8080", mVersion, false));
+            mFoursquare = new Foursquare(Foursquare.createHttpApi(FoursquaredSettings.DEBUG_SERVER, mVersion, false));
         } else {
             mFoursquare = new Foursquare(Foursquare.createHttpApi(mVersion, false));
         }
